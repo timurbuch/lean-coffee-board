@@ -1,0 +1,42 @@
+### POST jsonplaceholder.com (Create)
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "title": "New Post!",
+    "body": "This is my post!"
+}
+
+
+### GET jsonplaceholder.com (Read)
+GET https://jsonplaceholder.typicode.com/posts
+
+
+### GET jsonplaceholder.com
+GET https://jsonplaceholder.typicode.com/posts/2
+
+
+### PUT jsonplaceholder.typicode.com (Update)
+
+PUT https://jsonplaceholder.typicode.com/posts/2
+Content-Type: application/json
+
+{
+    "title": "New Post!",
+    "body": "This is my post!"
+}
+
+
+### DELETE jsonplaceholder.com (Delete)
+DELETE https://jsonplaceholder.typicode.com/posts/2
+
+
+### PATCH (Update)
+
+PATCH https://jsonplaceholder.typicode.com/posts/2
+Content-Type: application/json
+
+{
+    "title": "New Post!",
+    "body": "This is my post!"
+}
