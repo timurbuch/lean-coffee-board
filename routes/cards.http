@@ -2,36 +2,35 @@
 GET http://localhost:3000/api/cards/
 
 ### GET Localhost single entry
-GET http://localhost:3000/api/cards/1
+GET http://localhost:3000/api/cards/4
 
 ### POST
 POST http://localhost:3000/api/cards
 Content-Type: application/json
 
 {
-    "title": "New Post",
-    "body": "That's the new post!"
+    "text": "That's the new post!",
+    "author": "Jonah J. Jameson"
 }
 
 ### PUT
 
-PUT http://localhost:3000/api/cards/1
-Content-Type: application/json
+PUT http://localhost:3000/api/cards/0b9Pxf9doc-cpJ7A5HDgR
+Content-Type: application/json 
 
 {
-    "title": "New Post 2",
-    "body": "That's the new post!"
+    "text": "New Post 2",
+    "author": "New Author"
 }
 
 ### PATCH
-PATCH http://localhost:3000/api/cards/2
+PATCH http://localhost:3000/api/cards/0b9Pxf9doc-cpJ7A5HDgR
 Content-Type: application/json
 
 {
-    "title": "New Post 3",
-    "body": "This is my newest post!"
+    "text": "New Post 3"
 }
 
 ### DELETE
-DELETE http://localhost:3000/api/cards/2234
+DELETE http://localhost:3000/api/cards/23
 
