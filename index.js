@@ -1,11 +1,12 @@
+const { response } = require('express')
 const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello, Backend!')
-})
+app.use(express.json())
+
+app.use('/api/cards', require('./routes/cards'))
 
 app.listen(port, () => {
-  console.log(`Server läuft auf Port ${port}`)
+  console.log(`Server is listening on Port ${port}`)
 })
