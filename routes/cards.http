@@ -1,3 +1,40 @@
+### GET localhost
+GET http://localhost:3000/api/cards/
+
+### GET Localhost single entry
+GET http://localhost:3000/api/cards/1
+
+### POST
+POST http://localhost:3000/api/cards
+Content-Type: application/json
+
+{
+    "title": "New Post",
+    "body": "That's the new post!"
+}
+
+### PUT
+
+PUT http://localhost:3000/api/cards/1
+Content-Type: application/json
+
+{
+    "title": "New Post 2",
+    "body": "That's the new post!"
+}
+
+### PATCH
+PATCH http://localhost:3000/api/cards/2
+Content-Type: application/json
+
+{
+    "title": "New Post 3",
+    "body": "This is my newest post!"
+}
+
+### DELETE
+DELETE http://localhost:3000/api/cards/2234
+
 ### POST jsonplaceholder.com (Create)
 POST https://jsonplaceholder.typicode.com/posts
 Content-Type: application/json
